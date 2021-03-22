@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mon Premier Formulaire</title>
+  </head>
+    <body>
+      <h1>Votre Avis Nous Interésse</h1>
+   <form>
+    <table>
+      <tr>
+       <td>
+     <fieldset>
+        <legend>Informations Personnelles</legend>
+    <ol>
+     <li>
+       <label for="nom">Nom </label>
+       <input required type="text"name="Nom" id="Nom"value="">
+     </li>
+     <li>
+       <label for="Date de naissane">Date de naissane</label>
+       <input required type="date" id="date" name="Date" value="mm/dd/yyyy" />
+     </li>
+     <li>
+       <label for="Site">Site</label>
+       <input required type="url" id="url" name="url"
+              placeholder="http://monsite.com" />
+     </li>
+     <li>
+       <label for="Emploi">Emploi</label>
+        <select id="select">
+            <option></option>
+            <option>Etudiant</option>
+            <option>Administrateur</option>
+            <option>Réseau</option>
+            <option>Développeur Web</option>
+            <option>Web designer </option>
+            <option>DevOps </option>
+        </select>
+     </li>
+     <li>
+       <label for="Approx. Salaire annuel">Approx. Salaire annuel</label>
+       <br>
+       <input min="1" max="1000" step="1000"
+       required type="number" id="number" name="number" />
+     </li>
+  </ol>
+  </fieldset>
+     </td>
+     <td></td>
+     <td>
+  <fieldset>
+        <legend>Informations de Contatct</legend>
+  <ol>
+   <li>
+    <label for="adresse ligne 1">Adresse ligne 1</label>
+    <br>
+    <input required type="addrass" id="adresse"name="Adresse">
+   </li>
+   <li>
+    <label for="adresse ligne 2">Adresse ligne 2</label>
+    <br>
+    <input required type="addrass" id="adrasse"name="adresse">
+   </li>
+   <li>
+    <label for="pays">Pays</label>
+    <select id="select">
+      <option></option>
+      <option>Algérie </option>
+      <option>Tunisie </option>
+      <option>Maroc </option>
+     </select>
+    </li>
+    <li>
+     <label for="tél"> Tél</label>
+     <input required type="tel" id="tel" name="tel" placeholder="eg:+21367..." />
+    </li>
+    <li>
+     <label for="">Courriel</label>
+     <input required type="email" id="email" name="Courriel" />
+   </li>
+   </ol>
+   </fieldset>
+       </td>
+      </tr>
+      </table>
+   </form>
+  <div class="Préférences">
+      <h1>Préférences</h1>
+  <div>
+      <label for="Choisir une couleur"> Choisir une couleur</label>
+      <input required type="color" id="head" name="head" value="#e66465">
+       <br>
+   </div>
+   <div>
+    <label for="range">Sur une échelle de 1 à 10, quel est degré d'enthousiasme
+       pour HTML5? </label>
+    <input min="1" max="10" step="1"
+     required type="range" id="range" name="range"/>
+     <br>
+    </div>
+    <div>
+         <input type="submit" value="Envoyer"/>
+    </div>
+   </div>
+  </body>
+</html>
